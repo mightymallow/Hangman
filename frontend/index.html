@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hangman</title>
+    <script src="hangman.js"></script>
+  </head>
+  <body>
+    <div>
+      Welcome to Hangman!
+      <div>
+        <p>Games Won: <span id="gamesWon"></span></p>
+        <p>Games Lost: <span id="gamesLost"></span></p>
+      </div>
+      <button style="width: 130px; height: 40px;" onClick="startGame()" id="startGame">
+        Start Game
+      </button>
+      <div style="margin-top: 20px;" id="letters"></div>
+      <img style="width: 300px" id="hangmanImage" src="./images/1.png" />
+      <p style="font-weight: bold; font-size: 19px;" id="secretWord"></p>
+      <p>Number of Guesses Left: <span id="numberOfGuessesAllowed"></span></p>
+      <p>Number of Guesses Made: <span id="numberOfGuessesMade"></span></p>
+
+      <div style="color: red; font-weight: bold;" id="messageElement"></div>
+    </div>
+
+    <hr />
+    <div>
+      <button onClick="clearSessions()">Clear Sessions</button>
+      <button onClick="refreshStats()">Refresh Stats</button>
+      <p>Database Stats:</p>
+      <div id="stats"></div>
+    </div>
+  </body>
+
+</html>
